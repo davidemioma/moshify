@@ -156,3 +156,40 @@ html{
         padding-left: 0;
     }
   }
+
+  /*Icon*/
+  .icon{
+      width: 40px;
+      height: 40px;
+  }
+
+  .icon_small{
+      width: 30px;
+      height: 30px;
+  }
+
+  .icon_primary{
+      fill: var(--color-primary);
+  }
+
+  .icon_secondary{
+      fill: var(--color-secondary);
+  }
+
+  .icon_white{
+      fill: #fff;
+  }
+
+  .icon_container{
+      border-radius: 100%;
+      background: #f3f9fa;
+      width: 64px;
+      height: 64px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .icon_container-accent{
+      background-color: var(--color-accent);
+  }
