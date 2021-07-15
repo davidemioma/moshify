@@ -576,3 +576,35 @@ html{
 }
 
 /*Collapsible*/
+.collapsible_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible_heading{
+    margin: 0;
+    font-size: 3rem;
+}
+
+.collapsible_icon{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible_content{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.collapsible_expanded .collapsible_icon{
+    transform: rotate(0);
+}
+
+.collapsible_expanded .collapsible_content{
+    max-height: 100vh;
+    opacity: 1;
+}
+
+/*Block*/
