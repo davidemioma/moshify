@@ -535,3 +535,44 @@ html{
 }
 
 /*callouts*/
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout_primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout_heading{
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.callout .button{
+    justify-self: center;
+    align-self: center;
+}
+
+.callout_content{
+    text-align: center;
+    margin-right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .callout_content{
+        text-align: left;
+    }
+
+    .callout .grid_1x2{
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout.button{
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
+
+/*Collapsible*/
