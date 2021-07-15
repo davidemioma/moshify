@@ -12,6 +12,8 @@ html{
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --border-radius: 30px;
+    --color-border: #ccc;
   }
 
   ::selection {
@@ -264,8 +266,73 @@ html{
       display: inline-block;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
       .button{
           font-size: 1.5rem;
       }
+  }
+
+  /*Input group*/
+  .input{
+      border-radius: var(--border-radius);
+      padding: 1.5rem 3rem;
+      font-size: 2rem;
+      outline: 0;
+      border: 1px solid var(--color-border);
+      color: var(--color-headings);
+  }
+
+  ::placeholder{
+      color: #cdcbd7;
+  }
+
+  .input_group{
+      display: flex;
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+  }
+
+  .input_group .input{
+      flex-grow: 1;
+      border: 0;
+      padding: 1.5rem 2rem;
+  }
+
+  .input_group .button{
+      margin: 4px ;
+  }
+
+  @media screen and (min-width: 1024px) {
+      .input{
+          font-size: 1.5rem;
+      }
+  }
+
+  /*Card*/
+  .card{
+      border-radius: 7px;
+      box-shadow: 0 0 20px 10px #f3f3f3;
+  }
+
+  .card_header,
+  .card_body{
+      padding: 2rem 3rem;
+  }
+
+  .card_primary .card_header{
+      background: var(--color-primary);
+      color: #fff;
+  }
+
+  .card_secondary .card_header{
+    background: var(--color-secondary);
+    color: #fff;
+  }
+
+  .card_primary .badge_primary{
+      background: #126de4;
+  }
+
+  .card_secondary .badge_secondary{
+      background: #02cdf1;
   }
