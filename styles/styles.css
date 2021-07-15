@@ -467,7 +467,7 @@ html{
     bottom: 12px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .quote {
       font-size: 2rem;
     }
@@ -499,3 +499,39 @@ html{
 }
 
 /*Testimonial*/
+.testimonial{
+    padding: 3rem;
+}
+
+.testimonial_images{
+    position: relative;
+    margin: 0 3rem;
+}
+
+.testimonial_images > img{
+    width: 100%;
+}
+
+.testimonial .icon_container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width:768px) {
+    .testimonial_images{
+        margin: 0;
+    }
+
+    .testimonial .quote,
+    .testimonial .quote_author{
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote{
+        margin-left: 6rem;
+        margin-right: 0;
+    }
+}
+
+/*callouts*/
