@@ -712,4 +712,26 @@ html{
 }
 
 /*Hero*/
+.hero_tagline{
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
 
+.hero_image{
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .hero{
+        padding-top: 0;
+    }
+
+    .hero_content{
+        text-align: left;
+        align-self: center;
+    }
+}
+
+/*Domain Block*/
