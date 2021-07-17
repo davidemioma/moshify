@@ -770,3 +770,27 @@ html{
 }
 
 /*Features*/
+.feature{
+    gap: 4rem 3rem;
+    margin: 12rem 0;
+}
+
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+
+.feature_image{
+    width: 100%;
+}
+
+.feature_heading{
+    margin: 1rem 0;
+}
+
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature_content{
+        order: 2;
+    }
+}
+
+/*Showcase Block*/
