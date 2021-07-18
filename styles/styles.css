@@ -200,7 +200,7 @@ html{
   .button{
       text-transform: uppercase;
       border-radius: 40px;
-      padding: 2rem 3rem;
+      padding: 2rem 4vw;
       cursor: pointer;
       font-size: 1.8rem;
       font-weight: 600;
@@ -269,6 +269,7 @@ html{
   @media screen and (min-width: 1024px) {
       .button{
           font-size: 1.5rem;
+          padding: 2rem 3rem;
       }
   }
 
@@ -296,6 +297,7 @@ html{
       flex-grow: 1;
       border: 0;
       padding: 1.5rem 2rem;
+      width: 0;
   }
 
   .input_group .button{
@@ -744,7 +746,7 @@ html{
 
 .block_domain-prices{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -840,6 +842,8 @@ html{
 .footer_heading{
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
 }
 
 .footer_image{
@@ -865,6 +869,7 @@ html{
 
     .footer_sections{
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        margin-top: 10rem;
     }
 
     .footer .collapsible_icon{
@@ -891,5 +896,9 @@ html{
     .footer_image{
         order: -1;
         margin-top: 1rem;
+    }
+    
+    .callout_signup{
+        transform: translateY(10rem);
     }
 }
