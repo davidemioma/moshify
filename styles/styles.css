@@ -178,12 +178,24 @@ html{
       fill: var(--color-primary);
   }
 
+  .icon_primary-img{
+    filter: invert(40%) sepia(89%) saturate(2011%) hue-rotate(199deg) brightness(99%) contrast(103%);
+  }
+
   .icon_secondary{
       fill: var(--color-secondary);
   }
 
+  .icon_secondary-img{
+    filter: invert(60%) sepia(57%) saturate(1399%) hue-rotate(146deg) brightness(102%) contrast(106%);
+  }
+
   .icon_white{
       fill: #fff;
+  }
+
+  .icon_white-img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(46deg) brightness(100%) contrast(103%);
   }
 
   .icon_container{
